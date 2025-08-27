@@ -1,7 +1,8 @@
 import bg
 import errors
 from time import sleep
-
-errors.info1()
-errors.info2()
-errors.setupfail()
+bg.getos()
+sleep(1)
+bg.playStartSound()
+errors.errortest()
+bg.playStartSound()

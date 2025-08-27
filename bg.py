@@ -20,11 +20,17 @@ def getimports():
 
 def getos():
     print(platform.system())
+    sleep(0.1)
     print(platform.processor())
+    sleep(0.1)
     print(platform.architecture())
+    sleep(0.1)
     print(platform.machine())
+    sleep(0.1)
     print(platform.node())
+    sleep(0.1)
     print(platform.platform())
+    sleep(0.1)
 def clear():
     if platform == 'darwin':
         os.system("clear")
@@ -47,7 +53,8 @@ def playShutdownSound():
     pygame.mixer.music.load("CHIMES.wav")
     pygame.mixer.music.play()
 def startscreen():
-    playStartSound()
+    m = tkinter.Tk()
+    m.mainloop()
 
 def addbg():
     m = tkinter.Tk()

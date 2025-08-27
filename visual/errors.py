@@ -12,3 +12,11 @@ def info2():
 def setupfail():
     bg.playErrorSound()
     messagebox.showerror("Error!", "Setup couldn't continue, we're sorry!")
+def setupfinished():
+    bg.playShutdownSound()
+    messagebox.showinfo("Setup!", "Completed setup.")
+def errortest():
+    info1()
+    info2()
+    setupfail()
+    setupfinished()
